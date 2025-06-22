@@ -7,7 +7,7 @@ let transHistory = [];
 
 let doWithdraw = () => {
   moneyFromUser = +moneyInp.value;
-  if (moneyFromUser <= balnce) {
+  if (moneyFromUser <= balnce && moneyFromUser > 0) {
     balnce -= moneyFromUser;
     moneyAsNumber.innerText = balnce;
     let wdObj = {
