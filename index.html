@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>InstaPay</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <section id="heroSection">
+      <video class="background-video" autoplay muted loop>
+        <source src="./moneyVid.mp4" type="video/mp4" />
+        المتصفح لا يدعم الفيديو
+      </video>
+      <div class="big-div">
+        <div class="system-container">
+          <img src="./InstaPay_Logo1.png" alt="" />
+          <p>Your Current Balance is : <span>0</span>$</p>
+          <input type="number" placeholder="Enter money amount" />
+          <div class="btns">
+            <button onclick="doWithdraw()" class="withdraw">withdraw</button>
+            <button onclick="doDeposite()" class="deposite">deposite</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="transTableSection">
+      <div>
+        <table>
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Action</th>
+              <th>Value</th>
+              <th>Total</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
