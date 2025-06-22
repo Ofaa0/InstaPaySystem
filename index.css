@@ -65,10 +65,9 @@ body {
         }
         .btns {
           display: flex;
-          gap: 40px;
+          gap: 10px;
           @media (width <= 991px) {
             flex-direction: column;
-            gap: 10px;
           }
           button {
             outline: none;
